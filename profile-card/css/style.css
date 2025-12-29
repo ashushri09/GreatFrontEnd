@@ -1,4 +1,4 @@
-/* Put any custom CSS styles here.  */
+/* Put any custom CSS styles here. 
 /* Be sure to delete the <style> tag in index.html if you want to use this stylesheet. */
 body {
   margin: 0;
@@ -10,22 +10,147 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  background: linear-gradient(147.52deg, #f9fafb 8.89%, #d2d6db 100.48%);
+
+  
 }
 
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
-.credits {
-  color: #777;
-  position: fixed;
-  bottom: 24px;
-  left: 24px;
-  font-size: 11px;
-  text-align: center;
+
+:root {
+  --purple--color: #4338ca;
+  --black--color: #171717;
+  --gray--color: #525252;
+  --purple--hover: #3730a3;
+  --purple--disabled: #f5f5f5;
 }
 
-.credits a {
-  color: #000;
-  font-weight: bold;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding-top: 200px;
+
+}
+
+.card-container {
+  display: flex;
+  background-color: #ffffff;
+  width: 320px;
+  min-height: 400px;
+padding: 24px 16px;
+  border-radius: 8px;
+  box-shadow:
+    0px 1px 3px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.06);
+    gap:40px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.details {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+}
+
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.image-container img {
+  width: 64px;
+  height: 64px;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 500;
+  color: #171717;
+}
+
+.role {
+  font-size: 14px;
+  font-weight: 400;
+  color: #525252;
+}
+
+.description {
+    font-size: 16px;
+  font-weight: 400;
+  color: #525252;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+
+}
+
+button {
+  color: white;
+  background-color: #4338ca;
+width: 100%;
+padding: 10px 0;
+border-radius: 4px;
+border: none;
+}
+
+button:hover {
+  background: var(--purple--hover);
+}
+
+button:disabled {
+  background: var(--purple--disabled);
+  color: var(--gray--color);
+}
+
+button:focus {
+  background: var(--purple--hover);
+  outline-color: lightcyan;
+
+} 
+
+
+
+ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+li {
+  color: var(--purple--color);
+  font-size: 1.25rem;
+  padding: .5rem;
+}
+
+li:hover {
+  background: var(--purple--disabled);
+
 }
