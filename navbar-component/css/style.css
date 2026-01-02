@@ -1,0 +1,198 @@
+/* Put any custom CSS styles here.  */
+/* Be sure to delete the <style> tag in index.html if you want to use this stylesheet. */
+body {
+  margin: 0;
+  font-family: "Noto Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  background: linear-gradient(147.52deg, #f9fafb 8.89%, #d2d6db 100.48%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+.websiteNav {
+  /* background-color: red; */
+  padding: 16px 112px 0 112px;
+  display: flex;
+  gap: 96px;
+}
+
+.navbarComponent {
+  display: flex;
+}
+
+.navBarUL {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+
+.buttonComponent{
+  display: flex;
+  gap: 16px;
+  margin-left: auto;
+}
+
+
+nav a{
+  text-decoration: none;
+  color: #525252;
+}
+
+  .button:focus {
+    box-shadow: 0px 0px 0px 4px rgba(68, 76, 231, 0.12);
+  }
+
+  .menuIcon {
+    border: none;
+    display: none;
+  }
+
+  .menuIcon:hover {
+      box-shadow: 0px 0px 0px 2px rgba(68, 76, 231, 0.12);
+  border: 0.2px solid #e6e6e6;
+  color: #0a0a0a;
+  cursor: pointer;
+  }
+
+.learnMore {
+  background-color: #fff;
+border: 0.5px solid #e6e6e6;
+    width: 121px;
+  border-radius: 4px;
+  box-shadow:
+    0px 1px 3px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.06);
+  color: #171717;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+
+.learnMore:hover{
+  box-shadow: 0px 0px 0px 4px rgba(68, 76, 231, 0.12);
+  background: #fafafa;
+  border: 1px solid #e6e6e6;
+  color: #0a0a0a;
+}
+
+.seePricing{
+  background-color: #4338ca;
+  color: #fff;
+  border: none;
+  width: 121px;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+
+.closeButton:hover{
+     box-shadow: 0px 0px 0px 2px rgba(68, 76, 231, 0.12);
+  border: 0.2px solid #e6e6e6;
+  color: #0a0a0a;
+  cursor: pointer;
+}
+
+.seePricing:hover, .seePricing:focus {
+  background: #3730a3;
+}
+
+.sideBar {
+  position: fixed;
+  top:0;
+  right:0;
+  height: 100vh;
+  width: 359px;
+  z-index: 999;
+  background-color: white;
+  display: none ;
+  flex-direction: column;
+  padding: 32px 16px 16px 16px;
+  gap:24px;
+}
+.header {
+  display: flex;
+justify-content: space-between;
+}
+
+
+.sideBarList {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap:8px;
+}
+
+.sideBarList li {
+  padding: 8px 12px;
+  color: #171717;
+}
+
+.sidebarButtonComponent {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  gap: 16px;
+}
+
+.sideBarLearnMore{
+    background-color: #fff;
+border: 0.5px solid #e6e6e6;
+  border-radius: 4px;
+  padding: 10px 16px;
+  box-shadow:
+    0px 1px 3px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.06);
+  color: #171717;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+
+.sideBarLearnMore:hover {
+    box-shadow: 0px 0px 0px 4px rgba(68, 76, 231, 0.12);
+  background: #fafafa;
+  border: 1px solid #e6e6e6;
+  color: #0a0a0a;
+}
+
+
+.tryItOut {
+    background-color: #4338ca;
+  color: #fff;
+  padding: 10px 16px;
+
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+
+.tryItOut:focus, .tryItOut:hover {
+  background: #3730a3;
+
+}
+
+
+@media(max-width:800px){
+  .hideOnMobile {
+    display: none;
+  }
+
+  .menuIcon{
+    display: block;
+   align-self: flex-end;
+  }
+}
