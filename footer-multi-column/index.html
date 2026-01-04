@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- [Delete this comment] This file is the main file for the challenge. For the most part, you should be editing this file. -->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hero Section | GreatFrontEnd Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+        <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="img/favicon.ico" sizes="any" />
+    <style>
+    </style>
+  </head>
+
+
+   <!-- Code Starts From Here -->
+  <body class="w-screen h-screen flex flex-col bg-gradient-to-b from-gray-50 to-[#d2d6db] p-4">
+    <footer class="w-full h-full flex flex-col py-8 gap-12 bg-white rounded md:gap-16 md:py-16  lg:px-16 lg:py-12">
+
+      <!-- top container -->
+
+      <div class="px-4 flex flex-col gap-8 md:gap-5 lg:flex-row lg:gap-16 lg:px-8 lg:items-center lg:self-stretch lg:justify-between">
+
+        <!-- text and supporting text -->
+         <div class="gap-2 flex flex-col">
+            <p class="text-neutral-900 text-xl font-semibold">Join our newsletter</p>
+            <p class="font-normal text-base text-neutral-600">We will send you a nice letter once per week. No spam</p>
+         </div>
+
+         <!-- Email Capture -->
+
+        <div class="flex flex-col gap-4  md:flex-row">
+          <div
+            class="flex flex-col gap-1.5 md:grow lg:gap-4 lg:w-[400px] lg:justify-end"
+          >
+            <div
+              class="flex flex-col px-3.5 py-2.5 bg-neutral-50 rounded border border-solid border-neutral-200 font-normal text-sm text-neutral-500"
+            >
+              <input
+                id="email-input"
+                class="bg-neutral-50"
+                type="email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+            <span id="hint" class="invisible font-normal text-sm text-red-600"
+              >Please give me a correct eamil</span
+            >
+          </div>
+          <button
+            id="subscribe-btn"
+            class="flex justify-center bg-indigo-700 rounded py-2.5 font-medium text-sm text-white md:w-[98px] md:h-[40px]"
+          >
+            Subscribe
+          </button>
+        </div>
+        </div>
+
+      <!-- bottom content -->
+
+      <div class = "px-4 flex flex-col gap-12 md:gap-16 lg:px-8">
+        <!-- about -->
+         <div class="gap-8 flex flex-col md:gap-12 lg:flex-row lg:gap-16 lg:flex-wrap">
+          <!-- logo and shopping text -->
+          <div class="flex flex-col gap-6  self-stretch md:gap-8">
+            <img src="./img/abstractly-logo.png" alt="profile pic" class="h-8 w-[140px]"/>
+            <p class="text-neutral-600 font-normal text-base">Craft stunning style journeys that weave more joy into every thread.</p>
+          </div>
+
+          <!-- Links -->
+          <div class="flex flex-col gap-8 md:flex-row lg:gap-8 lg:grow lg:justify-end">
+            <!-- Shop Categories Links-->
+            <div class="flex flex-col gap-4 md:grow lg:w-[280px] lg:grow-0">
+              <h3 class="text-neutral-500 text-sm font-normal">
+                SHOP CATEGORIES
+              </h3>
+              <ul class="flex flex-col gap-3">
+                <li><a href="#">Unisex</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Men</a></li>
+              </ul>
+            </div>
+
+            <!-- Shop Collections Links -->
+            <div class="flex flex-col gap-4 md:grow lg:w-[280px] lg:grow-0">
+              <h3 class="text-neutral-500 text-sm font-normal">
+                SHOP COLLECTIONS
+              </h3>
+              <ul class="flex flex-col gap-3">
+                  <li><a href="#">Latest arrivals</a></li>
+                  <li><a href="#">Urban Oasis</a></li>
+                  <li><a href="#">Cozy Comfort</a></li>
+                  <li><a href="#">Fresh Fushion</a></li>
+              </ul>
+            </div>
+          </div>
+         </div>
+
+         <!-- contact us -->
+          <div class="flex flex-col gap-8 pt-8 border-t border-solid border-neutral-200 md:flex-row lg:justify-between">
+            <p class="text-base font-normal text-neutral-500">© 2024 StyleNest, Inc. All rights reserved.</p>
+             <ul id="social-icons" class="flex flex-row items-center gap-6">
+            <li><i class="ri-youtube-line"></i></li>
+            <li><i class="ri-instagram-line"></i></li>
+            <li><i class="ri-facebook-box-line"></i></li>
+            <li><i class="ri-github-line"></i></li>
+            <li><i class="ri-twitter-x-line"></i></li>
+          </ul>
+          </div>
+      </div>
+    </footer>
+    <script src="js/index.js"></script>
+  </body>
+</html>
+
