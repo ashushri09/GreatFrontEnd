@@ -1,0 +1,9 @@
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
+
+.actualPrice {
+  font-family:sans-serif
+}
