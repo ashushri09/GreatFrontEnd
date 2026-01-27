@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <!-- [Delete this comment] This file is the main file for the challenge. For the most part, you should be editing this file. -->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hero Section | GreatFrontEnd Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Tailwind CDN allows you to use Tailwind classes immediately in your HTML without any installation steps. 
+      If you're not using Tailwind, you may delete the <script> -->
+    <!-- Get started on Tailwind: https://tailwindcss.com/docs/installation/play-cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="icon" href="img/favicon.ico" sizes="any" />
+    <style>
+      /* You may write styles inside this <style> tag or within `css/style.css`. */
+    </style>
+  </head>
+  <body class="min-h-screen bg-gray-200 p-4 flex">
+    <div
+      class="w-full flex flex-1 bg-white rounded-sm shadow-sm md:rounded-md md:shadow-md lg:shadow-lg items-center justify-center"
+    >
+      <div
+        class="flex gap-6 w-full px-8 py-12 md:py-16 lg:px-[112px] lg:py-[96px]"
+      >
+        <div class="flex w-full flex-col gap-8 items-center">
+          <div class="flex gap-4 md:gap-6">
+            <button
+              class="font-medium rounded-sm text-sm text-neutral-600 hover:text-neutral-900"
+            >
+              Features
+            </button>
+            <button
+              class="font-medium text-sm rounded-sm text-neutral-600 hover:text-neutral-900"
+            >
+              Pricing
+            </button>
+            <button
+              class="font-medium text-sm rounded-sm text-neutral-600 hover:text-neutral-900"
+            >
+              About Us
+            </button>
+
+            <button
+              class="font-medium text-sm rounded-sm text-neutral-600 hover:text-neutral-900"
+            >
+              Contact
+            </button>
+          </div>
+          <div class="flex flex-col gap-4">
+            <div class="flex items-center justify-center gap-6">
+              <!-- YouTube -->
+              <a
+                href="#"
+                aria-label="YouTube"
+                class="text-gray-400 hover:text-gray-700 transition"
+              >
+                <svg
+                  class="h-6 w-6"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                >
+                  <path
+                    d="M23.5 6.2s-.2-1.7-.9-2.4c-.8-.9-1.7-.9-2.1-1C17.6 2.5 12 2.5 12 2.5h0s-5.6 0-8.5.3c-.4.1-1.3.1-2.1 1C.7 4.5.5 6.2.5 6.2S0 8.1 0 10v2c0 1.9.5 3.8.5 3.8s.2 1.7.9 2.4c.8.9 1.9.9 2.4 1 1.7.2 7.2.3 8.2.3 0 0 5.6 0 8.5-.3.4-.1 1.3-.1 2.1-1 .7-.7.9-2.4.9-2.4s.5-1.9.5-3.8v-2c0-1.9-.5-3.8-.5-3.8zM9.5 14.5v-5l5 2.5-5 2.5z"
+                  />
+                </svg>
+              </a>
+
+              <!-- Instagram -->
+              <a
+                href="#"
+                aria-label="Instagram"
+                class="text-gray-400 hover:text-gray-700 transition"
+              >
+                <svg
+                  class="h-6 w-6"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                >
+                  <path
+                    d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm5.2-.9a1.2 1.2 0 11-2.4 0 1.2 1.2 0 012.4 0z"
+                  />
+                </svg>
+              </a>
+
+              <!-- Facebook -->
+              <a
+                href="#"
+                aria-label="Facebook"
+                class="text-gray-400 hover:text-gray-700 transition"
+              >
+                <svg
+                  class="h-6 w-6"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                >
+                  <path
+                    d="M22 12a10 10 0 10-11.5 9.9v-7H8v-3h2.5V9.5c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.3c-1.3 0-1.7.8-1.7 1.6V12H17l-.4 3h-2.5v7A10 10 0 0022 12z"
+                  />
+                </svg>
+              </a>
+
+              <!-- GitHub -->
+              <a
+                href="#"
+                aria-label="GitHub"
+                class="text-gray-400 hover:text-gray-700 transition"
+              >
+                <svg
+                  class="h-6 w-6"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                >
+                  <path
+                    d="M12 .5a12 12 0 00-3.8 23.4c.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.4-4-1.4-.5-1.2-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.8-.8 1.5-1.2-.9-.1-1.9-.5-1.9-2.2 0-.5.2-.9.5-1.2-.1-.1-.2-.6.1-1.3 0 0 .4-.1 1.3.5a4.5 4.5 0 012.4 0c.9-.6 1.3-.5 1.3-.5.3.7.2 1.2.1 1.3.3.3.5.7.5 1.2 0 1.7-1 2.1-1.9 2.2.3.3.6.8.6 1.6v2.3c0 .3.2.7.8.6A12 12 0 0012 .5z"
+                  />
+                </svg>
+              </a>
+
+              <!-- X (Twitter) -->
+              <a
+                href="#"
+                aria-label="X"
+                class="text-gray-400 hover:text-gray-700 transition"
+              >
+                <svg
+                  class="h-6 w-6"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                >
+                  <path
+                    d="M18.3 2H21l-6.7 7.7L22 22h-6.8l-5.3-6.6L4 22H1.3l7.2-8.3L2 2h6.9l4.8 6L18.3 2z"
+                  />
+                </svg>
+              </a>
+            </div>
+
+            <p class="font-normal text-sm text-neutral-900">
+              © 2024 Abstractly, Inc. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
