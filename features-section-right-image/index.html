@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <!-- [Delete this comment] This file is the main file for the challenge. For the most part, you should be editing this file. -->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hero Section | GreatFrontEnd Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Tailwind CDN allows you to use Tailwind classes immediately in your HTML without any installation steps. 
+      If you're not using Tailwind, you may delete the <script> -->
+    <!-- Get started on Tailwind: https://tailwindcss.com/docs/installation/play-cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="icon" href="img/favicon.ico" sizes="any" />
+    <style>
+      /* You may write styles inside this <style> tag or within `css/style.css`. */
+    </style>
+  </head>
+  <body class="flex bg-gray-200 p-4">
+    <div
+      class="flex-1 bg-white shadow-sm rounded-sm px-3 py-12 md:shadow-md md:rounded-md md:px-4 md:py-16 lg:shadow-lg lg:p-[96px]"
+    >
+      <div class="flex flex-col gap-12 md:gap-16">
+        <!-- Header -->
+        <div class="flex flex-col gap-5 lg:px-[160px] items-center">
+          <div class="flex flex-col gap-3 lg:px-10 items-center">
+            <p class="text-base font-semibold text-indigo-700">
+              High quality images
+            </p>
+            <p class="text-3xl font-semibold text-neutral-900 md:text-5xl">
+              For designers, by designers
+            </p>
+          </div>
+          <p
+            class="text-lg font-normal text-neutral-600 md:text-xl text-center"
+          >
+            Unleash boundless creativity with a large repository of images
+            optimized for designers
+          </p>
+        </div>
+
+        <!-- Container -->
+        <div class="flex flex-col gap-12 md:gap-16 lg:flex-row">
+          <ul class="flex flex-col gap-1 md:gap-5 lg:px-[160px]">
+            <li class="flex gap-5">
+              <div
+                class="w-12 h-12 bg-white shadow-sm md:shadow-md lg:shadow-lg rounded-full flex items-center justify-center"
+              >
+                <img src="./img/icons8-hd-50.png" class="w-5 h-5" />
+              </div>
+              <div class="flex flex-col gap-2 py-[10px]">
+                <p class="text-lg font-semibold text-neutral-900">
+                  5K resolution support
+                </p>
+                <p class="text-base font-normal text-neutral-600">
+                  All images boast a minimum resolution of 5K, ensuring crisp,
+                  crystal-clear quality.
+                </p>
+              </div>
+            </li>
+            <li class="flex gap-5">
+              <div
+                class="w-12 h-12 bg-white shadow-sm md:shadow-md lg:shadow-lg rounded-full flex items-center justify-center"
+              >
+                <img
+                  src="./img/Water-Percent-Line--Streamline-Remix.png"
+                  loading="lazy"
+                />
+              </div>
+              <div class="flex flex-col gap-2 py-[10px]">
+                <p class="text-lg font-semibold text-neutral-900">
+                  From water to glass
+                </p>
+                <p class="text-base font-normal text-neutral-600">
+                  We offer a wide array of abstractions, ranging from water to
+                  glass, and encompassing various styles including 3D and
+                  vector.
+                </p>
+              </div>
+            </li>
+            <li class="flex gap-5">
+              <div
+                class="w-12 h-12 bg-white shadow-sm md:shadow-md lg:shadow-lg rounded-full flex items-center justify-center"
+              >
+                <img
+                  src="./img/Rainbow-Line--Streamline-Remix.png"
+                  loading="lazy"
+                />
+              </div>
+              <div class="flex flex-col gap-2 py-[10px]">
+                <p class="text-lg font-semibold text-neutral-900">
+                  Portrait or landscape
+                </p>
+                <p class="text-base font-normal text-neutral-600">
+                  Effortlessly adapt your images for any platform - whether it's
+                  a stunning wallpaper or captivating Instagram reels and
+                  stories.
+                </p>
+              </div>
+            </li>
+          </ul>
+          <div class="w-full aspect-[4/3] md:aspect-[16/9] overflow-hidden">
+            <img
+              src="./img/unsplash:rAtzDB6hWrU.jpg"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
