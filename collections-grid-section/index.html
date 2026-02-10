@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <!-- [Delete this comment] This file is the main file for the challenge. For the most part, you should be editing this file. -->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hero Section | GreatFrontEnd Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Tailwind CDN allows you to use Tailwind classes immediately in your HTML without any installation steps. 
+      If you're not using Tailwind, you may delete the <script> -->
+    <!-- Get started on Tailwind: https://tailwindcss.com/docs/installation/play-cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="icon" href="img/favicon.ico" sizes="any" />
+    <style>
+      /* You may write styles inside this <style> tag or within `css/style.css`. */
+    </style>
+  </head>
+  <body class="flex bg-gray-200 p-4">
+    <div
+      class="flex-1 flex flex-col bg-white px-3 py-12 gap-8 rounded-sm shadow-sm md:shadow-md md:px-4 md:py-16 md:rounded-md lg:shadow-lg lg:p-[96px]"
+    >
+      <p class="font-semibold text-3xl text-neutral-900">Out Collections</p>
+
+      <!-- Parent container -->
+      <div class="grid grid-cols-1 gap-7 md:grid-cols-2">
+        <!-- Card 1 -->
+        <div
+          class="relative w-full h-[580px] rounded-lg overflow-hidden md:h-full"
+        >
+          <img
+            src="https://vaqybtnqyonvlwtskzmv.supabase.co/storage/v1/object/public/e-commerce-track-images/collections/urban-oasis.jpg"
+            class="w-full h-full object-cover left-image"
+            alt="Urban Oasis"
+          />
+
+          <div class="absolute inset-0 flex items-end">
+            <div class="p-4">
+              <p class="text-sm text-white left-name">Urban Oasis</p>
+              <p class="text-lg font-medium text-white left-description">
+                For the city dwellers
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Group: Card 2 + Card 3 -->
+        <div class="grid grid-cols-1 gap-7">
+          <!-- Card 2 -->
+          <div class="relative w-full rounded-lg overflow-hidden">
+            <img
+              src="https://vaqybtnqyonvlwtskzmv.supabase.co/storage/v1/object/public/e-commerce-track-images/collections/urban-oasis.jpg"
+              class="w-full h-full object-cover right-upper-image"
+              alt="Urban Oasis"
+            />
+
+            <div class="absolute inset-0 flex items-end">
+              <div class="p-4">
+                <p class="text-sm text-white right-upper-name">Urban Oasis</p>
+                <p
+                  class="text-lg font-medium text-white right-upper-description"
+                >
+                  For the city dwellers
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="relative w-full rounded-lg overflow-hidden">
+            <img
+              src="https://vaqybtnqyonvlwtskzmv.supabase.co/storage/v1/object/public/e-commerce-track-images/collections/urban-oasis.jpg"
+              class="w-full h-full object-cover right-lower-image"
+              alt="Urban Oasis"
+            />
+
+            <div class="absolute inset-0 flex items-end">
+              <div class="p-4">
+                <p class="text-sm text-white right-lower-name">Urban Oasis</p>
+                <p
+                  class="text-lg font-medium text-white right-lower-description"
+                >
+                  For the city dwellers
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
